@@ -1,6 +1,10 @@
-# tase
+# Tase
 
-A new Flutter project.
+Tase is an amazing Table Search.
+
+Use Tase to:
+- Search for user by email or primary group
+- Sort user by hours studied
 
 ## Getting Started
 
