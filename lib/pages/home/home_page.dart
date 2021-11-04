@@ -1,7 +1,8 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:tase/pages/home/components/users_table.dart';
-import 'package:tase/providers/filter_provider.dart';
+import 'package:tase/pages/home/components/header.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,22 +16,23 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-              child: TextField(
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'Search by Email ou Primary Group',
-                  ),
-                  onChanged: (String input) {
-                    Provider.of<FilterProvider>(context, listen: false).input =
-                        input;
-                  }),
+        child: ScrollConfiguration(
+          behavior: ScrollConfiguration.of(context).copyWith(
+            dragDevices: {
+              PointerDeviceKind.touch,
+              PointerDeviceKind.mouse,
+            },
+          ),
+          child: SingleChildScrollView(
+            child: Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 1050),
+                child: Column(
+                  children: const [Header(), UsersTable()],
+                ),
+              ),
             ),
-            const UsersTable()
-          ],
+          ),
         ),
       ),
     );

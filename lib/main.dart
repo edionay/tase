@@ -18,11 +18,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Tase',
-        theme: ThemeData.dark().copyWith(
-            scaffoldBackgroundColor: kBackgroundColor,
-            textTheme: GoogleFonts.poppinsTextTheme(
-                Theme.of(context).textTheme.apply(bodyColor: Colors.white)),
-            canvasColor: kSecondaryColor),
+        theme: ThemeData.light().copyWith(
+            textTheme:
+                GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme.apply(
+                      bodyColor: kPrimaryColor,
+                    ))),
         home: MultiProvider(
           providers: [ChangeNotifierProvider(create: (_) => FilterProvider())],
           child: const HomePage(),
