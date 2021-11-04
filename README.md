@@ -1,7 +1,7 @@
 # Tase
 
 Tase is an amazing Table Search <br />
-Available for Android and Web
+Available for Android and [WEB](https://tase.edionay.com)
 
 ## Tase Features
 
@@ -37,3 +37,7 @@ Run:
 ```
 flutter run 
 ```
+
+## Known issues
+
+Stay updated about known issues at the [issues](https://github.com/edionay/tase/issues?q=is%3Aopen+is%3Aissue+label%3Abug) section
