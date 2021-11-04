@@ -1,6 +1,6 @@
 # Tase
 
-Tase is an amazing Table Search.
+Tase is an amazing Table Search <br />
 Available for Android and Web
 
 ## Tase Features
