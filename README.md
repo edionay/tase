@@ -1,7 +1,7 @@
 # Tase
 
 Tase is an amazing Table Search <br />
-Available for Android and [WEB](https://tase.edionay.com)
+Available for [Android](https://github.com/edionay/tase/releases) and [WEB](https://tase.edionay.com)
 
 ## Tase Features
 
