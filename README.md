@@ -1,6 +1,7 @@
 # Tase
 
 Tase is an amazing Table Search.
+Available for Android and Web
 
 ## Tase Features
 
@@ -8,6 +9,10 @@ Tase is an amazing Table Search.
 - Sort user by hours studied
 
 ## How to Use Locally
+
+**Prerequisites**
+
+- [Flutter](https://flutter.dev/)
 
 **Step 1:**
 
