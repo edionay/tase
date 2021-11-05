@@ -40,4 +40,4 @@ flutter run
 
 ## Known issues
 
-Stay updated about known issues at the [issues](https://github.com/edionay/tase/issues?q=is%3Aopen+is%3Aissue+label%3Abug) section
+Stay updated about known issues at the [issues](https://github.com/edionay/tase/issues?q=is%3Aissue+is%3Aopen) section
