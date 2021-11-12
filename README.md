@@ -5,9 +5,17 @@ Available for [Android](https://github.com/edionay/tase/releases) and [WEB](http
 
 ## Tase Features
 
-- Search for a user by email
-- Search for a user by primary group
-- Sort user by hours studied
+- Table of users containing 
+  - First name
+  - Last name
+  - Phone number
+  - Email
+  - Primary group
+  - Hours studied
+- Search box
+  - Search for a user by email
+  - Search for a user by primary group
+- Sort users by hours studied
 
 ## How to Use Locally
 
