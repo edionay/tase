@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Tase',
+        title: 'Tase' ,
         theme: ThemeData.light().copyWith(
             textTheme:
                 GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme.apply(
