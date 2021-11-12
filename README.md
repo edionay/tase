@@ -5,14 +5,23 @@ Available for [Android](https://github.com/edionay/tase/releases) and [WEB](http
 
 ## Tase Features
 
-- Search for user by email or primary group
-- Sort user by hours studied
+- Responsive table of users containing 
+  - First name
+  - Last name
+  - Phone number
+  - Email
+  - Primary group
+  - Hours studied
+- Case-insensitive search box
+  - Search for a user by email
+  - Search for a user by primary group
+- Sort users by hours studied
 
 ## How to Use Locally
 
 **Prerequisites**
 
-- [Flutter](https://flutter.dev/)
+- [Flutter 2.5](https://flutter.dev/)
 
 **Step 1:**
 
