@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class FilterProvider extends ChangeNotifier {
   String _inputFilter = "";
@@ -16,4 +16,10 @@ class FilterProvider extends ChangeNotifier {
     _isAscending = ascending;
     notifyListeners();
   }
+
+  void toggleSorting() {
+    _isAscending = !_isAscending;
+    notifyListeners();
+  }
+
 }

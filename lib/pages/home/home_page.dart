@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:tase/pages/home/components/users_table.dart';
 import 'package:tase/pages/home/components/header.dart';
+import 'components/options.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -12,8 +13,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: SafeArea(
         child: ScrollConfiguration(
@@ -28,7 +31,12 @@ class _HomePageState extends State<HomePage> {
               child: ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: 1050),
                 child: Column(
-                  children: const [Header(), UsersTable()],
+                  children: const [
+                    Header(),
+                    Options(),
+                    UsersTable(),
+                    // if (!tableView) const MobileTable()
+                  ],
                 ),
               ),
             ),
@@ -38,3 +46,5 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+

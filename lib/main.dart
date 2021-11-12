@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:tase/pages/home/home_page.dart';
 import 'package:tase/providers/filter_provider.dart';
+import 'package:tase/providers/responsive_provider.dart';
 
 import 'constants.dart';
 
@@ -24,7 +25,10 @@ class MyApp extends StatelessWidget {
                       bodyColor: kPrimaryColor,
                     ))),
         home: MultiProvider(
-          providers: [ChangeNotifierProvider(create: (_) => FilterProvider())],
+          providers: [
+            ChangeNotifierProvider(create: (_) => FilterProvider()),
+            ChangeNotifierProvider(create: (_) => ResponsiveProvider()),
+          ],
           child: const HomePage(),
         ));
   }
