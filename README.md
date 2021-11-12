@@ -5,14 +5,14 @@ Available for [Android](https://github.com/edionay/tase/releases) and [WEB](http
 
 ## Tase Features
 
-- Table of users containing 
+- Responsive table of users containing 
   - First name
   - Last name
   - Phone number
   - Email
   - Primary group
   - Hours studied
-- Search box
+- Not case-sensitive search box
   - Search for a user by email
   - Search for a user by primary group
 - Sort users by hours studied
